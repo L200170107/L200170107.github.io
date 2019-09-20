@@ -1,76 +1,86 @@
 <html>
     <head>
     <title> Tugas DDL dan DML </title></head>
-        <body bgcolor='pink'>
-            <p align ='center'><font face='comic sans ms' size='20' color='red'> Tugas DDL DML </p>
-            <p align ='center'><font face='comic sans ms' size='15' color='black'>Perintah DDL</p>
-            <table border="1">
-                <tr>
-                    <td>No.</td>
-                    <td>Perintah</td>
-                    <td>Penjelasan</td>
-                    <td>Sintaks</td>
+        <body background="gambar.jpg">
+            <p align ='center'><marquee><font face='comic sans ms' size='20'> TUGAS DDL DAN DML</font></marquee></p>
+            <p><font face='comic sans ms' size='10' color='white'>Perintah DDL</font></p>
+            <table border="5" bgcolor="white">
+                <tr align="center">
+                    <td><b>No</b></td>
+                    <td><b>Perintah</b></td>
+                    <td><b>Pengertian</b></td>
+                    <td><b>Syntax</b></td>
+                    <td><b>Contoh</b></td>
                 </tr>
                 <tr>
                     <td>1</td>
                     <td>CREATE</td>
-                    <td>Membuat database baru</td>
+                    <td>Perintah yang digunakan untuk membuat 
+                        , termasuk membuat database baru, tabel baru
+                        , dan kolom baru</td>
                     <td>CREATE DATABASE nama_database;</td>
+                    <td>CREATE DATABASE mahasiswa;</td>
                 </tr>
                 <tr>
                     <td>2</td>
                     <td>DROP</td>
-                    <td>Menghapus database</td>
+                    <td>Menghapus database atau tabel</td>
                     <td>DROP DATABASE nama_database;</td>
+                    <td>DROP DATABASE mahasiswa;</td>
                 </tr>
                 <tr>
                     <td>3</td>
                     <td>RENAME</td>
                     <td>Mengubah nama tabel</td>
                     <td>RENAME TABLE Jurnal TO Jurnalku;</td>
+                    <td>ALTER table mahasiswa RENAME wisudawan;</td>
                 </tr>
                 <tr>
                     <td>4</td>
                     <td>ALTER</td>
                     <td>Mengubah struktur tabel yang telah dibuat</td>
                     <td>ALTER TABLE table_name ADD column_name datatype;</td>
+                    <td>ALTER table mahasiswa DROP nama;</td>
                 </tr>
             </table>
             <br>
-            <p>Perintah DML</p>
-            <table border="1">
-                <tr>
-                    <td>No.</td>
-                    <td>Perintah</td>
-                    <td>Penjelasan</td>
-                    <td>Sintaks</td>
+            <p><font face='comic sans ms' size='10' color='white'>Perintah DML</font></p>
+            <table border="5" bgcolor="white">
+                <tr align="center">
+                    <td><b>No</b></td>
+                    <td><b>Perintah</b></td>
+                    <td><b>Pengertian</b></td>
+                    <td><b>Sintaks</b></td>
+                    <td><b>Contoh</b></td>
                 </tr>
                 <tr>
                     <td>1</td>
                     <td>UPDATE</td>
-                    <td>Memperbarui Data</td>
+                    <td>Memperbarui data lama menjadi data terkini</td>
                     <td>UPDATE nama_tabel</td>
+                    <td>mahasiswa set nim='L200170107'=L200170113;</td>
                 </tr>
                 <tr>
                     <td>2</td>
                     <td>INSERT</td>
-                    <td>Menyisipkan data</td>
+                    <td>Menyisipkan atau memasukkan data baru kedalam tabel</td>
                     <td>INSERT into nama_tabel values (‘value1’, ‘value2’,’ …’)</td>
+                    <td>INSERT into mahasiswa values('L200170107','Nur Aini');</td>
                 </tr>
                 <tr>
                     <td>3</td>
                     <td>SELECT</td>
                     <td>Mengambil data atau menampilkan data dari satu tabel atau beberapa tabel dalam relasi</td>
                     <td>SELECT nama_kolom from nama tabel</td>
+                    <td>SELECT nama_mhs from mahasiswa where nilai = 70;</td>
                 </tr>
                 <tr>
                     <td>4</td>
                     <td>DELETE</td>
                     <td>Menghapus data dari tabel</td>
-                    <td>DELETE nama_kolom FROM nama tabel where kondisi.</td>
+                    <td>DELETE nama_kolom FROM nama tabel where kondisi</td>
+                    <td>DELETE from mahasiswa</td>
                 </tr>
             </table>
         </body>
-    
-    
 </html>
